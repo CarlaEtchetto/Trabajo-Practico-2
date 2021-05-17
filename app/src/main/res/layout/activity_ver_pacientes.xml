@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    tools:context=".ListadoPacientes">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        tools:layout_editor_absoluteX="16dp">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/m_nombre"
+        android:layout_width="279dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#FFEBC0F3"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Ingrese nombre del Paciente"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/m_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/allerta"
+        android:text="Buscar"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/m_nombre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/m_tipoAnimal"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/m_diagnostico"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_tipoAnimal" />
+
+    <TextView
+        android:id="@+id/m_reposo"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_diagnostico" />
+
+    <TextView
+        android:id="@+id/m_tratamientos"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_reposo" />
+
+    <TextView
+        android:id="@+id/m_causas"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_tratamientos" />
+
+    <TextView
+        android:id="@+id/m_medicamentos"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_causas" />
+
+    <TextView
+        android:id="@+id/m_vet"
+        android:layout_width="380dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:text="Atendido por: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_medicamentos" />
+
+    <TextView
+        android:id="@+id/m_veterinario"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_vet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

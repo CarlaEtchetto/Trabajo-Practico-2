@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    android:orientation="vertical"
+    tools:context=".Atencion">
+
+    <TextView
+        android:id="@+id/i_vacio"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <EditText
+        android:id="@+id/i_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBC0F3"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" " />
+
+    <EditText
+        android:id="@+id/i_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEBC0F3"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Ingrese Raza"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" " />
+
+    <EditText
+        android:id="@+id/i_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEBC0F3"
+        android:ems="10"
+        android:fontFamily="@font/allerta"
+        android:hint="Ingrese Edad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" " />
+
+    <RadioGroup
+        android:id="@+id/i_tipoAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/i_gato"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEBC0F3"
+            android:fontFamily="@font/allerta"
+            android:text="Gato"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/i_perro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEBC0F3"
+            android:fontFamily="@font/allerta"
+            android:text="Perro"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/i_conejo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEBC0F3"
+            android:fontFamily="@font/allerta"
+            android:text="Conejo"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/i_vet"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFEBC0F3"
+        android:fontFamily="@font/allerta"
+        android:text="Seleccione un veterinario"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/i_veterinarios"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFEBC0F3"
+        android:spinnerMode="dialog"
+        android:textAlignment="center" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/i_aceptar"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="10dp"
+            android:text="Aceptar"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
